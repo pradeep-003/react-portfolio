@@ -85,7 +85,7 @@ const Landing = ({ setSelectedPage }) => {
           </AnchorLink>
           <a
             className="rounded-md ml-20 bg-gradient-rainblue py-3 px-10 block"
-            href="https://drive.google.com/file/d/1e6aDMoaJHudQsU0AC2oTZS9KDd4vG6ZC/view?usp=sharing"
+            href="https://drive.google.com/file/d/11JlvEFOmL-mmaIY1KzxF9IfZ3LwxfFJT/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

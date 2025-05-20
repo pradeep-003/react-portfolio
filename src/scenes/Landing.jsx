@@ -11,14 +11,27 @@ const Landing = ({ setSelectedPage }) => {
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
       {/* IMAGE SECTION */}
+      {/* IMAGE SECTION */}
       <div className="basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2">
-        <div className="relative z-0 w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden border-4 border-blue shadow-lg">
+        {isAboveLarge ? (
+          <div
+            className="relative z-0 ml-20 before:absolute before:-top-6 before:-left-6 before:rounded-full
+            before:w-[300px] md:before:w-[400px] before:h-[300px] md:before:h-[400px]
+            before:border-2 before:border-blue before:z-[-1]"
+          >
+            <img
+              alt="profile"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px]"
+              src="assets/profile-img.png"
+            />
+          </div>
+        ) : (
           <img
             alt="profile"
-            className="absolute ml-6 mt-6 w-full h-full transition duration-500 hover:filter hover:saturate-200"
-            src="/assets/profile-img.png"
+            className="z-10 w-full max-w-[200px] md:max-w-[320px]"
+            src="assets/profile-img.png"
           />
-        </div>
+        )}
       </div>
 
       {/* MAIN TEXT */}

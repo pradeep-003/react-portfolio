@@ -15,21 +15,20 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
+const Project = ({ title, link, description }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
-        </p>
-      </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <div className={overlayStyles}>
+          <p className="text-2xl font-playfair">{title}</p>
+          <p className="mt-7">{description}</p>
+        </div>
+        <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      </a>
     </motion.div>
   );
 };
@@ -58,9 +57,10 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
+          This project is a modern web application designed to enhance user
+          experience with intuitive design and seamless functionality. Built
+          using the latest technologies, it aims to solve real-world problems
+          efficiently.
         </p>
       </motion.div>
 
@@ -80,20 +80,42 @@ const Projects = () => {
           >
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
+          <Project
+            title="Project 1"
+            link="https://realtime-chat-app-db4a.onrender.com/login"
+            description="A real-time chat application built with React and Socket.io."
+          />
+          <Project
+            title="Project 2"
+            link="https://vespera-ivory.vercel.app/"
+            description="A web application built with React and Tailwind CSS for GGSIPU Tech Fest 2024."
+          />
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
+          <Project
+            title="Project 3"
+            link="https://07-omnifood-desktop-green.vercel.app/"
+            description="A food delivery application ."
+          />
+          <Project
+            title="Project 4"
+            link="https://react-tutorial-contact-manager-app-master-2robxsnjw.vercel.app/"
+            description="A contact manager application built with React."
+          />
+          <Project
+            title="Project 5"
+            link="https://sundown-pearl.vercel.app/"
+            description="Sundown is a multi-disciplinary studio focused on creating unique, end-to-end experiences and environments."
+          />
 
-          {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
           <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+            className="flex justify-center text-center items-center ml-200 p-10
+             max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+          ></div>
+
+          <div
+            className="flex justify-center text-center items-center ml-200 p-10 bg-blue
+             w-[400px] h-[400px] text-2xl font-playfair font-semibold pl-10"
           >
             SMOOTH USER EXPERIENCE
           </div>

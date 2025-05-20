@@ -7,7 +7,10 @@ const SocialMediaIcons = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img alt="linkedin-link" src="../assets/linkedin.png" />
+        <img
+          alt="linkedin-link"
+          src="https://img.icons8.com/?size=50&id=xuvGCOXi8Wyg&format=png&color=000000"
+        />
       </a>
       <a
         className="hover:opacity-50 transition duration-500"
@@ -17,7 +20,7 @@ const SocialMediaIcons = () => {
       >
         <img
           alt="Github-link"
-          src="https://img.icons8.com/?size=40&id=80462&format=png&color=000000"
+          src="https://img.icons8.com/?size=50&id=80462&format=png&color=000000"
         />
       </a>
       <a
@@ -39,7 +42,7 @@ const SocialMediaIcons = () => {
       >
         <img
           alt="GFG-link"
-          src="https://img.icons8.com/?size=40&id=AbQBhN9v62Ob&format=png&color=000000"
+          src="https://img.icons8.com/?size=50&id=AbQBhN9v62Ob&format=png&color=000000"
         />
       </a>
     </div>

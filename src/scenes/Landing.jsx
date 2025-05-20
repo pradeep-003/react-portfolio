@@ -22,14 +22,14 @@ const Landing = ({ setSelectedPage }) => {
             <img
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[400px]"
-              src="assets/profile-img.png"
+              src="assets/pp-modified.png"
             />
           </div>
         ) : (
           <img
             alt="profile"
             className="z-10 w-full max-w-[200px] md:max-w-[320px]"
-            src="assets/profile-img.png"
+            src="assets/pp-modified.png"
           />
         )}
       </div>
@@ -58,8 +58,8 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-            viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+            Web developer crafting responsive, user-friendly websites with
+            modern tech. Focused on delivering smooth digital experiences.
           </p>
         </motion.div>
 
@@ -76,22 +76,23 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+            className="bg-gradient-rainblue text-deep-blue rounded-md py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
             Contact Me
           </AnchorLink>
-          <AnchorLink
-            className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
+          <a
+            className="rounded-md ml-20 bg-gradient-rainblue py-3 px-10 block"
+            href="https://drive.google.com/file/d/1e6aDMoaJHudQsU0AC2oTZS9KDd4vG6ZC/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center px-10 font-playfair">
-              Let's talk.
+            <div className=" text-deep-blue font-semibold  hover:text-red transition duration-500 w-full h-full flex items-center justify-center  cursor-pointer">
+              Resume
             </div>
-          </AnchorLink>
+          </a>
         </motion.div>
 
         <motion.div
